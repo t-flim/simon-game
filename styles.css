@@ -10,6 +10,11 @@ body {
   color: #FEF2BF;
 }
 
+#high-light:hover {
+  cursor: pointer;
+  color: red;
+}
+
 .container {
   display: block;
   width: 50%;
