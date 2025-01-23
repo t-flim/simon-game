@@ -61,7 +61,7 @@ function replay() {
 
 function gameOver() {
     playSound("wrong");
-    gameTitle.html("Game Over, &#062;Press Me&#060; to Restart");
+    gameTitle.html("Game Over, <span id='high-light'>&#062;Press Me&#060;</span> to Restart");
     $("body").addClass("game-over");
     setTimeout(function() {
         $("body").removeClass("game-over");
