@@ -2,6 +2,7 @@
 var level = 0;
 var started = false;
 var gameTitle = $("#level-title");
+var instructions = $("#info-logo");
 
 var gamePattern = [];
 var userClickedPattern = [];
@@ -27,6 +28,10 @@ $(".btn").on("click", function(event) {
     playSound(userChosenColour);
 
     checkAnswer(userClickedPattern.length - 1);
+})
+
+instructions.on("click", function() {
+    $(".instruction-list").toggleClass("hidden");
 })
 
 function nextSequence() {
@@ -61,7 +66,7 @@ function replay() {
 
 function gameOver() {
     playSound("wrong");
-    gameTitle.html("Game Over, <span id='high-light'>&#062;Press Me&#060;</span> to Restart");
+    gameTitle.html("Game Over, <span id='high-light'>&#062;Click Me&#060;</span> to Restart");
     $("body").addClass("game-over");
     setTimeout(function() {
         $("body").removeClass("game-over");

@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  5% auto 3%;
   color: #FEF2BF;
 }
 
@@ -15,10 +15,27 @@ body {
   color: red;
 }
 
+#info-logo {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
 .container {
   display: block;
   width: 50%;
   margin: auto;
+}
+
+.instruction-list {
+  text-align: justify;
+  background-color: blanchedalmond;
+  padding: 2rem;
+  font-size: 2rem;
+  position: absolute;
+  left: 23%;
+  top: 40%;
+  /* width: 40%; */
 }
 
 .btn {
@@ -56,14 +73,24 @@ body {
   background-color: grey;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (orientation: portrait) {
   #level-title {
-    font-size: 5rem;
-    margin-top: 10rem;
+    font-size: 4rem;
+    margin: 10rem auto 5rem;
   }
   .container {
     width: 70%;
-    margin: 10rem auto;
+    margin: 5rem auto;
+  }
+  .instruction-list {
+    /* width: 40%; */
+    left: 13%;
+    top: 25%;
+    font-size: 3rem;
   }
   .btn {
     width: 250px;

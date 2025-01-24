@@ -3,37 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Simon</title>
+  <title>Simon Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="level-title"><span id="high-light">&#062;Press Me&#060;</span> to Start</h1>
+  <h1 id="level-title"><span id="high-light">&#062;Click Me&#060;</span> to Start</h1>
+
+  <div type="button" id="instructions" class="btn-special">
+    <img id="info-logo" src="assets/info_logo.png" alt="instructions-icon">
+  </div>
+
   <div class="container">
-    <div lass="row">
-
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
+    <div class="row">
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
     </div>
 
     <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
     </div>
-
   </div>
+
+
+  <div class="container instruction-list hidden">
+      <p class="instruction">1. Click <bold>Game Title</bold> to start game.</p>
+      <p class="instruction">2. Simon will play a sequence of buttons.</p>
+      <p class="instruction">3. Repeat the sequence by pressing the corresponding buttons.</p>
+      <p class="instruction">4. If you're successful, Simon will add another button to the sequence.</p>
+      <p class="instruction">5. If you fail, the game is over.</p>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="game.js"></script>
